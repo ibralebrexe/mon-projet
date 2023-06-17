@@ -17,10 +17,10 @@ export const availability = async (req: Request, res: Response) => {
      }
 
     
-      const reserve = await axios.get('http://localhost:8080/reservations?date=2023-06-16&resourceId=1337');
+      const reserve = await axios.get('http://localhost:8080/reservations?date=2023-06-17&resourceId=1337');
       const reservations = reserve.data;
 
-      const time = await axios.get('http://localhost:8080/timetables?date=2023-06-16&resourceId=1337');
+      const time = await axios.get('http://localhost:8080/timetables?date=2023-06-17&resourceId=1337');
       const timetables = time.data;
       
     
